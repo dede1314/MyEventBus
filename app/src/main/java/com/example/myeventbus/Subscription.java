@@ -1,7 +1,5 @@
 package com.example.myeventbus;
 
-import androidx.annotation.Nullable;
-
 /**
  * @author zhoujishi
  * @description

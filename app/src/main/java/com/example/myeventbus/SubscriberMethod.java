@@ -1,7 +1,6 @@
 package com.example.myeventbus;
 
 import androidx.annotation.Nullable;
-import androidx.annotation.WorkerThread;
 
 import java.lang.reflect.Method;
 

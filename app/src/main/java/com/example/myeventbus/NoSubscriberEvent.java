@@ -6,6 +6,11 @@ package com.example.myeventbus;
  * @date 2020/5/16
  */
 public class NoSubscriberEvent {
-    public NoSubscriberEvent(MyEventBus myEventBus, Object event) {
+    public final MyEventBus myEventBus;
+    public final Object originEvents;
+
+    public NoSubscriberEvent(MyEventBus myEventBus, Object originEvents) {
+        this.myEventBus = myEventBus;
+        this.originEvents = originEvents;
     }
 }
