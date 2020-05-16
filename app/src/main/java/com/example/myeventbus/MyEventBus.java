@@ -11,6 +11,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.ForkJoinPool;
 
 /**
  * @author zhoujishi
@@ -96,6 +97,17 @@ public class MyEventBus {
         throwsSubscriberException = builder.throwsSubscriberException;
         eventInheritance = builder.eventInheritance;
         executorService=builder.executorService;
+    }
+
+    public void invokeSubscriber(PendingPost pendingPost) {
+    }
+
+    public ExecutorService getExecutorService() {
+        return executorService;
+    }
+
+    public Logger getLogger() {
+        return logger;
     }
 
 
