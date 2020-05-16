@@ -14,7 +14,7 @@ public class SubscriberMethod {
     final Method method;
     final ThreadMode threadMode;
     final Class<?> eventType;
-    private int priority;
+    final int priority;
     final boolean sticky;
     public String methodString;
 

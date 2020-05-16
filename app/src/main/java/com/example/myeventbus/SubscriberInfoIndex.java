@@ -5,7 +5,6 @@ package com.example.myeventbus;
  * @description
  * @date 2020/5/15
  */
-public class SubscriberInfoIndex {
-    public SubscriberInfo getSubscirberInfo(Class<?> clazz) {
-    }
+public interface SubscriberInfoIndex {
+    public SubscriberInfo getSubscirberInfo(Class<?> clazz);
 }
